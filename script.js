@@ -5,7 +5,8 @@ counters.forEach((counter) => {
 
   const updateCounter = () => {
     const target = +counter.getAttribute('data-target');
-    console.log(typeof target, target);
+    // console.log(typeof target, target);
+    const count = +counter.innerText;
   };
 
   updateCounter();
