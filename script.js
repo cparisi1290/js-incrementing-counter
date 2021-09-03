@@ -10,6 +10,11 @@ counters.forEach((counter) => {
 
     const increment = target / 200;
     // console.log(increment);
+
+    if (count < target) {
+      counter.innerText = `${Math.ceil(count + increment)}`;
+      setTimeout(updateCounter, 1);
+    }
   };
 
   updateCounter();
