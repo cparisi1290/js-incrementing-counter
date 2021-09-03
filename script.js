@@ -14,6 +14,8 @@ counters.forEach((counter) => {
     if (count < target) {
       counter.innerText = `${Math.ceil(count + increment)}`;
       setTimeout(updateCounter, 1);
+    } else {
+      counter.innerText = target;
     }
   };
 
