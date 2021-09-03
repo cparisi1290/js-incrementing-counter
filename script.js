@@ -7,6 +7,9 @@ counters.forEach((counter) => {
     const target = +counter.getAttribute('data-target');
     // console.log(typeof target, target);
     const count = +counter.innerText;
+
+    const increment = target / 200;
+    // console.log(increment);
   };
 
   updateCounter();
